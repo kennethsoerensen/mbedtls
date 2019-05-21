@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Prepare') {
             steps {
-                sh 'cmake -B mbedtls-build -DCMAKE_C_COMPILER=clang -G Ninja ./mbedtls/'
+                sh 'cmake -B mbedtls-build -DCMAKE_C_COMPILER=clang -G Ninja .'
             }
         }
         stage('Build') {
