@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'fedora-cmake-ninja' }
-    }
+    agent { dockerfile true }
     stages {
         stage('Prepare') {
             steps {
